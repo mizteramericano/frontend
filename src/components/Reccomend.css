@@ -1,0 +1,87 @@
+/* Reccomend.css */
+.reccomend-section {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.reccomend-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.reccomend-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.reccomend-links {
+    display: flex;
+    gap: 8px;
+}
+
+.category-link {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.category-link:hover {
+    text-decoration: underline;
+}
+
+.reccomend-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.reccomend-card {
+    width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.reccomend-card:hover {
+    transform: scale(1.05);
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+}
+
+.product-name {
+    font-size: 1rem;
+    margin: 12px 0;
+    font-weight: bold;
+}
+
+.product-price {
+    color: #ff5722;
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+}
+
+.view-more-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.view-more-button:hover {
+    background-color: #0056b3;
+}
+
+/* ส่วนสไตล์อื่น ๆ ของการ์ดสินค้า */

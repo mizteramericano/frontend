@@ -1,0 +1,132 @@
+/* กรอบสำหรับสินค้า */
+.product-card {
+    display: flex;
+    padding: 20px;
+    background-color: #d9d9d9;
+    border-radius: 15px;
+    border: 2px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  /* การจัดรูปภาพให้ด้านซ้าย */
+  .product-image-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* การจัดรายละเอียดสินค้าให้ด้านขวา */
+  .product-details-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 20px;
+  }
+  
+  /* การตกแต่งรายละเอียดสินค้า */
+  .product-details {
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+  }
+  
+  /* ชื่อสินค้า */
+  .product-details h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* รายละเอียดสินค้าอื่นๆ */
+  .product-details p {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  /* ปุ่ม Add to Cart และ Buy Now */
+button.shadow-btn {
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 7px;
+    border: 1px solid transparent;
+    background-color: #007bff;
+    color: white;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    margin-bottom: 10px; /* เพิ่มระยะห่างระหว่างปุ่ม */
+  }
+  
+  button.shadow-btn:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+    border-color: #ff7b00;
+  }
+  
+  
+  /* กรอบรูปสินค้า */
+  .product-image {
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .product-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    border: 2px solid #ff7b00;
+  }
+  
+  .brand-logo {
+    width: 80px; /* ขนาดของโลโก้ */
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+/* สร้างกรอบรอบข้อมูลแบรนด์ */
+.brand-details {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd; /* สีขอบ */
+    border-radius: 8px; /* ขอบโค้ง */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เงากรอบ */
+    background-color: #f9f9f9; /* สีพื้นหลัง */
+}
+
+.brand-logo {
+    width: 80px; /* ขนาดของโลโก้ */
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.brand-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.brand-info h5 {
+    margin-right: 15px; /* กำหนดระยะห่างระหว่างชื่อแบรนด์และปุ่ม */
+}
+
+/* ปรับตำแหน่งปุ่ม View ให้อยู่ขวาสุด */
+.brand-info button {
+    margin-left: auto; /* ให้ปุ่มอยู่ขวาสุด */
+}
+

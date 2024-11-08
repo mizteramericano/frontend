@@ -1,0 +1,47 @@
+/* ReccomendShop.css */
+.reccomend-shop-section {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 40px;
+}
+
+.reccomend-title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* จัดตำแหน่งให้ตรงกับ "สินค้าแนะนำ" */
+    margin-bottom: 20px; /* เพิ่มระยะห่างจากส่วนที่ตามมา */
+}
+
+.reccomend-shop-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+.reccomend-shop-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.reccomend-shop-card {
+    width: 150px;
+    text-align: center;
+    padding: 10px;
+}
+
+.shop-logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* ทำให้โลโก้เป็นวงกลม */
+    object-fit: cover; /* ทำให้ภาพไม่ยืด */
+    margin-bottom: 10px;
+}
+
+.shop-name {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: bold;
+}

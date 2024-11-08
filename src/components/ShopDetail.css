@@ -1,0 +1,21 @@
+/* ใช้ font-family sans-serif สำหรับ body */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* หากคุณต้องการใช้ฟอนต์สำหรับทุกๆ ข้อความใน Card */
+.card-text,
+.card-title {
+    font-family: 'Roboto', sans-serif;
+}
+
+.thai-text {
+    font-family: 'Sarabun', sans-serif;
+}
+
+/* กำหนดสีของปุ่ม primary ให้เป็นสีแดง */
+.btn-primary {
+    background-color: #BB0000 !important;
+    /* สีแดง */
+    border-color: #BB0000 !important;
+}

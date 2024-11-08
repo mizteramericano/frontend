@@ -1,0 +1,22 @@
+.navbar-custom {
+    background-color: #004182; /* Customize navbar background color */
+}
+
+.navbar-custom .nav-link {
+    color: #ffffff;
+}
+
+.navbar-custom .dropdown-toggle {
+    color: #ffffff;
+}
+
+.navbar-custom .dropdown-menu {
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-custom .dropdown-item:hover {
+    background-color: #f1f1f1;
+}
+
+

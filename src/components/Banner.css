@@ -1,0 +1,8 @@
+/* AutoScrollingBanner.css */
+.carousel-item img {
+    height: 500px; /* ปรับขนาดความสูงตรงนี้ได้ */
+    object-fit: contain; /* เพื่อให้รูปภาพคงอัตราส่วนและไม่ถูกยืดหรือบีบ */
+}
+.carousel-caption h3, .carousel-caption p {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  /* ทำให้ข้อความเด่นชัด */
+}
