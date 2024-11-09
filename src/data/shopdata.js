@@ -7,5 +7,6 @@ export const shopdata = [
         phone :"+66 2 055 0550",
         address: "Seacon Bangkae, Bangkok 10160",
         contact: "BEAUTRIUM บิวเทรี่ยม Facebook page"
-    }
+    },
+
 ];

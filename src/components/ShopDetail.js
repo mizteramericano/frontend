@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Container, Button, Row, Col, Card } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom'; // ใช้ react-router-dom สำหรับการนำทาง
@@ -7,23 +8,18 @@ import './ShopDetail.css';
 
 const ShopDetail = () => {
     const navigate = useNavigate(); // สร้างตัวแปรสำหรับใช้ navigate
-    const shop = shopdata[0];
+    const shop = shopdata[0]; // ข้อมูลของร้านค้า
 
     // ฟังก์ชันที่ใช้สำหรับไปยังหน้ารายละเอียดสินค้า
     const handleProductDetail = (product) => {
-        navigate('/product', { state: { product } }); // ส่งข้อมูลสินค้าผ่าน state ไปยัง Product.js
+        // นำทางไปที่ '/product' และส่งข้อมูลสินค้าผ่าน state
+        navigate('/product', { state: { product } });
     };
 
     return (
         <Container className="mt-4">
             {/* ส่วนข้อมูลร้านค้า */}
-            <Card className="mb-4 p-3" 
-            style={{
-                backgroundColor: 'black',
-                color: 'white',
-                boxShadow: '0 10px 5px rgba(0, 0, 0, 0.3)', // เพิ่มเงาให้กับ Card
-                borderRadius: '20px' // เพิ่มความโค้งมนเล็กน้อยให้มุม Card
-            }}>
+            <Card className="mb-4 p-3" style={{ backgroundColor: 'black', color: 'white' }}>
                 <Row>
                     <Col md={3} className="d-flex align-items-center justify-content-center">
                         <Card.Img variant="top" src={shop.image} alt="logo" style={{ width: '80%' }} />
@@ -31,12 +27,10 @@ const ShopDetail = () => {
                     <Col md={9}>
                         <Card.Body>
                             <Card.Title as="h1">{shop.name}</Card.Title>
-                            <Card.Text className="thai-text">{shop.description}</Card.Text>
+                            <Card.Text>{shop.description}</Card.Text>
                             <Card.Text><strong>Phone:</strong> {shop.phone}</Card.Text>
-                            <Card.Text className="thai-text"><strong>Address:</strong> {shop.address}</Card.Text>
-                            <Card.Text className="thai-text">
-                                <strong>Contact:</strong> <a href="https://www.facebook.com/BEAUTRIUM/">{shop.contact}</a>
-                            </Card.Text>
+                            <Card.Text><strong>Address:</strong> {shop.address}</Card.Text>
+                            <Card.Text><strong>Contact:</strong> <a href="https://www.facebook.com/BEAUTRIUM/">{shop.contact}</a></Card.Text>
                         </Card.Body>
                     </Col>
                 </Row>

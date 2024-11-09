@@ -10,10 +10,10 @@ const Header = () => {
                 <div className="d-flex align-items-center">
                     <img
                         src="/images/chinchan.jpg" // ใช้ path ของโลโก้ร้าน Beautrium ที่นี่
-                        alt="Beautrium Logo"
+                        alt="chinchan Logo"
                         className="store-logo"
                     />
-                    <h2 className="store-name ms-3">NameShop</h2>
+                    <h2 className="store-name ms-3">ฺBuildSkin</h2>
                 </div>
 
                 {/* ปุ่ม log-in */}

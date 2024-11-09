@@ -32,16 +32,25 @@
     padding: 10px;
 }
 
-.shop-logo {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%; /* ทำให้โลโก้เป็นวงกลม */
-    object-fit: cover; /* ทำให้ภาพไม่ยืด */
-    margin-bottom: 10px;
+.reccomend-shop-button {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    width: 150px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.shop-name {
-    font-size: 1.2rem;
-    color: #333;
-    font-weight: bold;
+.reccomend-shop-button:hover {
+    transform: scale(1.05);
+}
+
+.shop-logo {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
 }
